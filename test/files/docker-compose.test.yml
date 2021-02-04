@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+
+  rainloop:
+    image: youtous/caddy-consul-docker:test-image
+    ports:
+      - "8001:80"
