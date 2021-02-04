@@ -11,7 +11,7 @@ services:
     alias: localhost # https://stackoverflow.com/questions/57059851/gitlab-ci-gives-curl-7-failed-to-connect-to-localhost-port-8090-connection-r
 
 variables:
-  CONTAINER_TAG_FOR_TESTS: youtous/rainloop:test-image
+  CONTAINER_TAG_FOR_TESTS: youtous/caddy-consul-docker:test-image
   CONTAINER_TEST_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
   CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
   CONTAINER_RELEASE_TAGGED_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG
