@@ -2,7 +2,7 @@
 
 [![pipeline status](https://gitlab.com/youtous/caddy-consul-docker/badges/master/pipeline.svg)](https://gitlab.com/youtous/caddy-consul-docker/-/commits/master) 
 [![Docker image size](https://img.shields.io/docker/image-size/youtous/caddy-consul-docker)](https://hub.docker.com/r/youtous/caddy-consul-docker/) 
-[![Docker hub](https://img.shields.io/badge/hub-youtous%2Fcaddy-consul-docker-099cec?logo=docker)](https://hub.docker.com/r/youtous/caddy-consul-docker/) 
+[![Docker hub](https://img.shields.io/badge/hub-youtous%2Fcaddy--consul--docker-099cec?logo=docker)](https://hub.docker.com/r/youtous/caddy-consul-docker/) 
 [![Licence](https://img.shields.io/github/license/youtous/caddy-consul-docker)](https://github.com/youtous/caddy-consul-docker/blob/master/LICENSE) 
 
 - docker hub: https://hub.docker.com/r/youtous/caddy-consul-docker
