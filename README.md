@@ -16,6 +16,7 @@ Plugins shipped with the build:
  - Caddy configuration from docker labels: [Caddy-Docker-Proxy](https://github.com/lucaslorentz/caddy-docker-proxy/)
  - Consul TLS K/V: [caddy-tlsconsul](https://github.com/pteich/caddy-tlsconsul)
  - Rate limit: [caddy-ratelimit](https://github.com/hundertzehn/caddy-ratelimit).
+ - TCP/UDP Layer: [caddy-l4](https://github.com/mholt/caddy-l4).
 
 Based on the work of https://p1ngouin.com/posts/why-i-migrated-from-traefik-to-caddy.
 

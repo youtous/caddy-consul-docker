@@ -35,6 +35,7 @@ import (
 	// List of plugins
 	_ "github.com/hundertzehn/caddy-ratelimit"
 	_ "github.com/lucaslorentz/caddy-docker-proxy/plugin/v2"
+	_ "github.com/mholt/caddy-l4"
 	_ "github.com/pteich/caddy-tlsconsul"
 )
 
