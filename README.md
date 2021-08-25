@@ -1,12 +1,12 @@
 # Caddy HA with Consul for Docker
 
 [![pipeline status](https://gitlab.com/youtous/caddy-consul-docker/badges/master/pipeline.svg)](https://gitlab.com/youtous/caddy-consul-docker/-/commits/master) 
-[![Docker image size](https://img.shields.io/docker/image-size/youtous/caddy-consul-docker)](https://hub.docker.com/r/youtous/caddy-consul-docker/) 
-[![Docker hub](https://img.shields.io/badge/hub-youtous%2Fcaddy--consul--docker-099cec?logo=docker)](https://hub.docker.com/r/youtous/caddy-consul-docker/) 
-[![Licence](https://img.shields.io/github/license/youtous/caddy-consul-docker)](https://github.com/youtous/caddy-consul-docker/blob/master/LICENSE) 
+[![Docker image](https://img.shields.io/badge/image-registry.gitlab.com%2Fyoutous%2Fcaddy--consul--docker-FA7035?logo=docker)](https://gitlab.com/youtous/caddy-consul-docker/container_registry/1687721) 
+[![Licence](https://img.shields.io/github/license/youtous/caddy-consul-docker)](https://github.com/youtous/caddy-consul-docker/blob/master/LICENSE)
 
-- docker hub: https://hub.docker.com/r/youtous/caddy-consul-docker
+- docker images: https://gitlab.com/youtous/caddy-consul-docker/container_registry/1687721
 - github repo: https://github.com/youtous/caddy-consul-docker
+- gitlab repo: https://gitlab.com/youtous/caddy-consul-docker
 
 ## Description
 
