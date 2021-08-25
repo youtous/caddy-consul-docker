@@ -25,7 +25,7 @@ Based on the work of https://p1ngouin.com/posts/why-i-migrated-from-traefik-to-c
 docker run -d -p 80:80 \
     -v $PWD/index.html:/usr/share/caddy/index.html \
     -v caddy_data:/data \
-    youtous/caddy-consul-docker
+    registry.gitlab.com/youtous/caddy-consul-docker
 ```
 
 :heartpulse: [Healtcheck](https://docs.docker.com/engine/reference/builder/#healthcheck) built-in.
