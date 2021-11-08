@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/caddyserver/caddy/v2 v2.4.5
 	github.com/hundertzehn/caddy-ratelimit v0.0.5
-	github.com/lucaslorentz/caddy-docker-proxy/plugin/v2 v2.0.0-20210628135844-4893c4dbcfbd
+	github.com/lucaslorentz/caddy-docker-proxy/plugin v0.0.0-20211030121354-194c558413ad
 	github.com/mholt/caddy-l4 v0.0.0-20210604203514-3cfcafe70883
 	github.com/pteich/caddy-tlsconsul v1.3.7
 	github.com/sillygod/cdp-cache v0.4.6
@@ -26,7 +26,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
 	github.com/cheekybits/genny v1.0.0 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e // indirect
-	github.com/containerd/containerd v1.5.1 // indirect
+	github.com/containerd/containerd v1.5.5 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
 	github.com/danwakefield/fnmatch v0.0.0-20160403171240-cbb64ac3d964 // indirect
 	github.com/dgraph-io/badger v1.6.2 // indirect
@@ -35,7 +35,7 @@ require (
 	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13 // indirect
 	github.com/dlclark/regexp2 v1.4.0 // indirect
 	github.com/docker/distribution v2.7.1+incompatible // indirect
-	github.com/docker/docker v20.10.6+incompatible // indirect
+	github.com/docker/docker v20.10.8+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/dustin/go-humanize v1.0.1-0.20200219035652-afde56e7acac // indirect
@@ -102,7 +102,7 @@ require (
 	github.com/segmentio/fasthash v1.0.3 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
-	github.com/sirupsen/logrus v1.7.0 // indirect
+	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/smallstep/certificates v0.16.4 // indirect
 	github.com/smallstep/cli v0.16.1 // indirect
 	github.com/smallstep/nosql v0.3.8 // indirect
@@ -119,7 +119,7 @@ require (
 	go.step.sm/linkedca v0.0.0-20210611183751-27424aae8d25 // indirect
 	go.uber.org/atomic v1.8.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect
-	go.uber.org/zap v1.19.0 // indirect
+	go.uber.org/zap v1.19.1 // indirect
 	golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e // indirect
 	golang.org/x/mod v0.4.2 // indirect
 	golang.org/x/net v0.0.0-20210614182718-04defd469f4e // indirect
@@ -127,7 +127,7 @@ require (
 	golang.org/x/term v0.0.0-20210615171337-6886f2dfbf5b // indirect
 	golang.org/x/text v0.3.6 // indirect
 	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba // indirect
-	golang.org/x/tools v0.1.3 // indirect
+	golang.org/x/tools v0.1.5 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/genproto v0.0.0-20210604141403-392c879c8b08 // indirect
 	google.golang.org/grpc v1.38.0 // indirect
