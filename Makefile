@@ -16,7 +16,7 @@ tests-no-build: ## Run all tests without building initial image
 	make clean
 
 clean: ## Remove docker images built.
-	docker rmi youtous/caddy-consul-docker:test-image
+	docker rmi youtous/caddy-consul-docker:test-image --force
 
 # see https://suva.sh/posts/well-documented-makefiles/
 help: ## Show this help prompt.
