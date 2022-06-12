@@ -913,8 +913,8 @@ github.com/lucas-clemente/quic-go v0.20.1/go.mod h1:fZq/HUDIM+mW6X6wtzORjC0E/WDB
 github.com/lucas-clemente/quic-go v0.23.0/go.mod h1:paZuzjXCE5mj6sikVLMvqXk8lJV2AsqtJ6bDhjEfxx0=
 github.com/lucas-clemente/quic-go v0.26.0 h1:ALBQXr9UJ8A1LyzvceX4jd9QFsHvlI0RR6BkV16o00A=
 github.com/lucas-clemente/quic-go v0.26.0/go.mod h1:AzgQoPda7N+3IqMMMkywBKggIFo2KT6pfnlrQ2QieeI=
-github.com/lucaslorentz/caddy-docker-proxy/v2 v2.7.0 h1:yrNOUpzC/wIeAHzn4F0jsjzOEGnUmS16ztyk5ORTLDg=
-github.com/lucaslorentz/caddy-docker-proxy/v2 v2.7.0/go.mod h1:n4hPVxDRsEsAMbeALY9T7NEx5cV+n8vNNRIY7YiQanM=
+github.com/lucaslorentz/caddy-docker-proxy/v2 v2.7.1 h1:ydY9GckzBB9RBt4EwtkDJqotDFyMh6pwJOgMQIp0Nc4=
+github.com/lucaslorentz/caddy-docker-proxy/v2 v2.7.1/go.mod h1:n4hPVxDRsEsAMbeALY9T7NEx5cV+n8vNNRIY7YiQanM=
 github.com/lunixbochs/vtclean v0.0.0-20180621232353-2d01aacdc34a/go.mod h1:pHhQNgMf3btfWnGBVipUOjRYhoOsdGqdm/+2c2E2WMI=
 github.com/lunixbochs/vtclean v1.0.0/go.mod h1:pHhQNgMf3btfWnGBVipUOjRYhoOsdGqdm/+2c2E2WMI=
 github.com/lxn/walk v0.0.0-20210112085537-c389da54e794/go.mod h1:E23UucZGqpuUANJooIbHWCufXvOcT6E7Stq81gU+CSQ=
