@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/caddyserver/caddy/v2 v2.5.1
 	github.com/hundertzehn/caddy-ratelimit v0.0.5
-	github.com/lucaslorentz/caddy-docker-proxy/v2 v2.7.0
+	github.com/lucaslorentz/caddy-docker-proxy/v2 v2.7.1
 	github.com/mholt/caddy-l4 v0.0.0-20220503192553-2ecee94d269f
 	github.com/pteich/caddy-tlsconsul v1.4.0
 	github.com/sillygod/cdp-cache v0.4.6
