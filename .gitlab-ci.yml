@@ -55,7 +55,7 @@ build-latest:
 
 # push "tagged" image to the registry
 build-release:
-  stage: relase
+  stage: release
   # only start a release on tags of master (not other branches)
   only:
     - tags # latest from master only
