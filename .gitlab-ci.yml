@@ -4,7 +4,7 @@ image: docker:latest
 stages:
   - build
   - test
-  - push
+  - release
 
 services:
   - name: docker:dind
@@ -45,7 +45,7 @@ test:
 
 # push "latest" image to the registry
 build-latest:
-  stage: push
+  stage: release
   only:
     - master # latest from master only
   script:
@@ -55,7 +55,7 @@ build-latest:
 
 # push "tagged" image to the registry
 build-release:
-  stage: push
+  stage: relase
   # only start a release on tags of master (not other branches)
   only:
     - tags # latest from master only
@@ -65,3 +65,27 @@ build-release:
     - docker pull $CONTAINER_TEST_IMAGE
     - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_TAGGED_IMAGE
     - docker push $CONTAINER_RELEASE_TAGGED_IMAGE
+
+release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(-?)(.*)$/'
+  before_script:
+    - apk add --no-cache go git curl tar
+    - go version
+    - GO111MODULE=on go get github.com/rcmachado/changelog@0.7.0
+    # install github cli
+    - curl -SL https://github.com/cli/cli/releases/download/v2.14.2/gh_2.14.2_linux_amd64.tar.gz -o /tmp/gh.tar.gz
+    - echo "3d4be4bf3446622c51192529f963d8719a2c78cc545aeab6fefff1c9ecf5b346  /tmp/gh.tar.gz" | sha256sum -c
+    - (cd /tmp && tar -xf gh.tar.gz && mv gh_2.14.2_linux_amd64/bin/gh /usr/local/bin && chmod +x /usr/local/bin/gh)
+  script:
+    - echo "running release_job for version $CI_COMMIT_TAG"
+    - export RELEASE_DESCRIPTION="$(~/go/bin/changelog show $CI_COMMIT_TAG)"
+    - echo "Release $CI_COMMIT_TAG description:"
+    - echo "$RELEASE_DESCRIPTION"
+    # gitlab release
+    - /usr/local/bin/release-cli create --name "$CI_COMMIT_TAG" --tag-name "$CI_COMMIT_TAG" --description "$RELEASE_DESCRIPTION"
+    # github release (must have a GH_TOKEN and GITHUB_REPO)
+    - if [ -z "$GITHUB_REPO" ]; then export GITHUB_REPO="$CI_PROJECT_PATH"; else echo "Github Repo = $GITHUB_REPO"; fi
+    - /usr/local/bin/gh release create "$CI_COMMIT_TAG" --repo "$GITHUB_REPO" --notes "$RELEASE_DESCRIPTION"

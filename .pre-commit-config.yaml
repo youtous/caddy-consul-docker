@@ -1,4 +1,16 @@
 repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.3.0
+  hooks:
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+    - id: check-yaml
+      exclude: \.j2.(yaml|yml)$
+    - id: check-toml
+    - id: check-json
+    - id: check-symlinks
+    - id: detect-private-key
+
 - repo: https://github.com/dnephin/pre-commit-golang
   rev: 96221dc741cb30cc0136999083dc6bd0e2113000
   hooks:
