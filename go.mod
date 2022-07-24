@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/caddyserver/caddy/v2 v2.5.2
+	github.com/caddyserver/transform-encoder v0.0.0-20220319234440-17b694fb69eb
 	github.com/hundertzehn/caddy-ratelimit v0.0.5
 	github.com/lucaslorentz/caddy-docker-proxy/v2 v2.7.1
 	github.com/mholt/caddy-l4 v0.0.0-20220702143407-acf0ea80461d
@@ -24,6 +25,7 @@ require (
 	github.com/armon/go-metrics v0.3.10 // indirect
 	github.com/aryann/difflib v0.0.0-20210328193216-ff5ff6dc229b // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
+	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/caddyserver/certmagic v0.16.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.1.2 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
