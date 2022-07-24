@@ -33,6 +33,7 @@ import (
 	_ "github.com/caddyserver/caddy/v2/modules/standard"
 
 	// List of plugins
+	_ "github.com/caddyserver/transform-encoder"
 	_ "github.com/hundertzehn/caddy-ratelimit"
 	_ "github.com/lucaslorentz/caddy-docker-proxy/v2"
 	_ "github.com/mholt/caddy-l4"
