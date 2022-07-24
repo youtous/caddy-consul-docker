@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add caddy-transform encoder for supporting backward compatibility with common_log module that have been removed from Caddy v2.5 (https://github.com/caddyserver/caddy/commit/0eb0b60f47bddcf24f6af9265e60044033555ff2) - [9f08c24cf2b3cf90f8159ff8e06ab2e6972133a5](https://gitlab.com/youtous/caddy-consul-docker/-/commit/9f08c24cf2b3cf90f8159ff8e06ab2e6972133a5)
+
 ### Fixed
 
 ### Changed
