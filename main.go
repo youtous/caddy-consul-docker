@@ -38,7 +38,6 @@ import (
 	_ "github.com/lucaslorentz/caddy-docker-proxy/v2"
 	_ "github.com/mholt/caddy-l4"
 	_ "github.com/pteich/caddy-tlsconsul"
-	_ "github.com/sillygod/cdp-cache"
 )
 
 func main() {
