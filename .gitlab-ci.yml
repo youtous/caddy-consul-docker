@@ -82,7 +82,7 @@ release:
   script:
     - echo "running release_job for version $CI_COMMIT_TAG"
     - export RELEASE_DESCRIPTION="$(~/go/bin/changelog show $CI_COMMIT_TAG)"
-    - if [ -z "${RELEASE_DESCRIPTION}" ]; echo "Release description is empty" && exit 1; fi
+    - if [ -z "${RELEASE_DESCRIPTION}" ]; then echo "Release description is empty" && exit 1; fi
     - echo "Release $CI_COMMIT_TAG description:"
     - echo "$RELEASE_DESCRIPTION"
     # gitlab release
